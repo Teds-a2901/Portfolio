@@ -1,13 +1,5 @@
-import { FaJava } from "react-icons/fa";
 import { RiJavaLine } from "react-icons/ri";
-import {
-  SiBootstrap,
-  SiGit,
-  SiMysql,
-  SiNodedotjs,
-  SiPhp,
-  SiPostman,
-} from "react-icons/si";
+import { SiBootstrap, SiNodedotjs, SiPhp, SiPostman } from "react-icons/si";
 
 const techstackscroll3 = [
   {
