@@ -1,4 +1,5 @@
 import { FaJava } from "react-icons/fa";
+import { RiJavaLine } from "react-icons/ri";
 import {
   SiBootstrap,
   SiGit,
@@ -16,7 +17,7 @@ const techstackscroll3 = [
 
   {
     name: "Java",
-    icon: <FaJava className="text-black" size={40} />,
+    icon: <RiJavaLine className="text-black" size={40} />,
   },
   {
     name: "PHP",

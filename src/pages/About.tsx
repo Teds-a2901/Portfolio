@@ -21,11 +21,11 @@ function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-4">
         <div className="bg-amber-400 rounded-xl shadow-lg p-6 max-w-3xl">
           <div className="overflow-hidden flex">
-            <ul className="flex animate-[scrollright_15s_linear_infinite]  ">
+            <ul className="flex animate-[scrollright_15s_linear_infinite]">
               {[...techstackscroll, ...techstackscroll].map((tech, index) => (
                 <div
                   key={index}
-                  className=" flex-col items-center space-y-2 mx-4 px-4 py-2"
+                  className="  flex-col items-center space-y-2 mx-4 px-4 py-2 "
                 >
                   <div className="text-4xl">{tech.icon}</div>
                 </div>
