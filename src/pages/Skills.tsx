@@ -1,5 +1,9 @@
 function Skills() {
-  return <div>Skills</div>;
+  return (
+    <section id="skill">
+      <div>Skills</div>;
+    </section>
+  );
 }
 
 export default Skills;
