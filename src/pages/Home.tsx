@@ -8,10 +8,10 @@ function Home() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center "
     >
       <div className="">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mt-10 px-4">
           <div className="space-y-6 max-w-2xl">
             <div className="bg-amber-100 inline-block py-1 px-4 rounded-full font-medium">
               Online | Web Developer
@@ -40,13 +40,13 @@ function Home() {
               parentClassName="all-letters"
             />
             <span className=""></span>
-            <p className=" text-muted-foreground max-w-lg animate-fade-left animate-once">
+            <p className="font-medium text-base max-w-lg animate-fade-left animate-once">
               I specialize in developing beautiful, high-performance web
               applications that deliver exceptional user experiences. Let's
               build something amazing together.
             </p>
 
-            <div className="flex gap-2">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2">
               <button className="inline-flex items-center justify-center rounded-md h-11 px-6 py-2 bg-slate-900 text-white hover:bg-amber-100 font-medium transition-colors hover:text-black">
                 Get Touch
               </button>
@@ -54,7 +54,7 @@ function Home() {
                 View Project
               </button>
             </div>
-            <div className=" flex items-center ">
+            <div className=" flex flex-wrap justify-center md:justify-start items-center gap-4 mt-2">
               <SocialmediaButton to="https://github.com/Teds-a2901">
                 <LuGithub size={24} />
               </SocialmediaButton>
@@ -69,7 +69,7 @@ function Home() {
               </SocialmediaButton>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center md:justify-end">
             <img
               src={DeveloperImg}
               alt="DeveloperImg"
@@ -77,6 +77,7 @@ function Home() {
             ></img>
           </div>
         </div>
+        <span></span>
       </div>
     </section>
   );

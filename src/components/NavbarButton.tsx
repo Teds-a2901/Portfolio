@@ -6,6 +6,7 @@ interface NavbarButtonProps {
   to: string;
   children: React.ReactNode;
 }
+
 function NavbarButton({ to, children }: NavbarButtonProps) {
   return (
     <NavLink
@@ -14,7 +15,7 @@ function NavbarButton({ to, children }: NavbarButtonProps) {
       className={({ isActive }) =>
         [
           NavigationHover,
-          isActive ? "after:w-full text-black font-semibold" : "text-gray-500",
+          isActive ? "after:w-full text-black font-semibold" : "text-gray-500 ",
         ].join(" ")
       }
     >

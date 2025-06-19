@@ -6,3 +6,21 @@
 @theme {
   --font-Inter: Inter, "sans-serif";
 }
+
+@keyframes scrollright {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollleft {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
