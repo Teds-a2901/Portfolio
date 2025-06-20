@@ -8,7 +8,7 @@ function About() {
     <section id="about">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">About me</h2>
-        <p className="text-center font-medium text-base items-center mt-4">
+        <p className="font-medium text-base mt-4 animate-fade-left">
           An aspiring web developer with over a year of experience in QA
           testing, bringing a sharp attention to detail and a passion for
           building. Outside of work, I enjoy building side projects as a hobby,
@@ -25,9 +25,14 @@ function About() {
               {[...techstackscroll, ...techstackscroll].map((tech, index) => (
                 <div
                   key={index}
-                  className="  flex-col items-center space-y-2 mx-4 px-4 py-2 "
+                  className=" flex-col items-center space-y-2 mx-4 px-4 py-2"
                 >
-                  <div className="text-4xl">{tech.icon}</div>
+                  <div className="flex space-x-2">
+                    <div className="text-4xl flex ">{tech.icon}</div>
+                    <p className="flex text-xl font-medium items-center text-center space-x-1 ">
+                      {tech.name}
+                    </p>
+                  </div>
                 </div>
               ))}
             </ul>
@@ -42,7 +47,12 @@ function About() {
                         key={index}
                         className=" flex-col items-center space-y-2 mx-4 px-4 py-2"
                       >
-                        <div className="text-4xl">{tech.icon}</div>
+                        <div className="flex space-x-2">
+                          <div className="text-4xl flex ">{tech.icon}</div>
+                          <p className="flex text-xl font-medium items-center text-center space-x-1 ">
+                            {tech.name}
+                          </p>
+                        </div>
                       </div>
                     )
                   )}
@@ -56,7 +66,12 @@ function About() {
                         key={index}
                         className=" flex-col items-center space-y-2 mx-4 px-4 py-2"
                       >
-                        <div className="text-4xl">{tech.icon}</div>
+                        <div className="flex space-x-2">
+                          <div className="text-4xl flex ">{tech.icon}</div>
+                          <p className="flex text-xl font-medium items-center text-center space-x-1 ">
+                            {tech.name}
+                          </p>
+                        </div>
                       </div>
                     )
                   )}
@@ -70,7 +85,12 @@ function About() {
                         key={index}
                         className=" flex-col items-center space-y-2 mx-4 px-4 py-2"
                       >
-                        <div className="text-4xl">{tech.icon}</div>
+                        <div className="flex space-x-2">
+                          <div className="text-4xl flex ">{tech.icon}</div>
+                          <p className="flex text-xl font-medium items-center text-center space-x-1 ">
+                            {tech.name}
+                          </p>
+                        </div>
                       </div>
                     )
                   )}

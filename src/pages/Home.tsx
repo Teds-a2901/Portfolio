@@ -11,7 +11,7 @@ function Home() {
       className="min-h-screen flex items-center justify-center "
     >
       <div className="">
-        <div className="grid md:grid-cols-2 gap-8 mt-10 px-4">
+        <div className="grid md:grid-cols-2 gap-8 mt-10 px-2">
           <div className="space-y-6 max-w-2xl">
             <div className="bg-amber-100 inline-block py-1 px-4 rounded-full font-medium">
               Online | Web Developer

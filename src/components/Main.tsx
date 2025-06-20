@@ -6,7 +6,7 @@ import ScrollToSection from "../Layout/Layout";
 
 function Main() {
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-7xl mx-auto block">
       <ScrollToSection />
       <Home />
       <About />

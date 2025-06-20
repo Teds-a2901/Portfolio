@@ -9,7 +9,7 @@ import {
 const techstackscroll1 = [
   { name: "React", icon: <SiReact className="text-black" size={40} /> },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: <SiTailwindcss className="text-black" size={40} />,
   },
   {
