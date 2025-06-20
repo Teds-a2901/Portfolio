@@ -15,3 +15,5 @@ const timeline = [
       "I was responsible for testing the functionality and performance of a web application within a specific project. I assisted in development tasks using HTML, CSS, and JavaScript, and took part in daily stand-ups, planning sessions, and team meetings. I also documented bugs and issues in detailed reports to support effective troubleshooting and improvements.",
   },
 ];
+
+export default timeline;
