@@ -1,7 +1,9 @@
+import TechStack from "../components/TechStack";
+
 function Skills() {
   return (
     <section id="skill">
-      <div>Skills</div>;
+      <TechStack />
     </section>
   );
 }

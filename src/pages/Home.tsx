@@ -6,13 +6,10 @@ import { SiGmail } from "react-icons/si";
 import DeveloperImg from "../assets/developer1.png";
 function Home() {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center "
-    >
+    <section id="home" className="min-h-screen flex items-center">
       <div className="">
         <div className="grid md:grid-cols-2 gap-8 mt-10 px-2">
-          <div className="space-y-6 max-w-2xl">
+          <div className="space-y-4 max-w-2xl">
             <div className="bg-amber-100 inline-block py-1 px-4 rounded-full font-medium">
               Online | Web Developer
             </div>
@@ -69,7 +66,7 @@ function Home() {
               </SocialmediaButton>
             </div>
           </div>
-          <div className="flex justify-center md:justify-end">
+          <div className="hidden md:block justify-center md:justify-end">
             <img
               src={DeveloperImg}
               alt="DeveloperImg"

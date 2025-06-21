@@ -5,12 +5,12 @@ const ScrollToSection = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const path = location.pathname.replace("/", "");
+    const path = location.pathname.replace("/", "") || "home";
     const section = document.getElementById(path);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [location.pathname]);
+  }, [location]);
 
   return null;
 };
