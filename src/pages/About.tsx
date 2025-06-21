@@ -1,7 +1,3 @@
-import techstackscroll from "../data/techstackscroll";
-import techstackscroll2 from "../data/techstackscroll2";
-import techstackscroll3 from "../data/techstackscroll3";
-import techstackscroll4 from "../data/techstackscroll4";
 import Timeline from "./Timeline";
 
 function About() {
