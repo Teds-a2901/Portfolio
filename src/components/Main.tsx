@@ -5,11 +5,11 @@ import Skills from "../pages/Skills";
 
 function Main() {
   return (
-    <main className="max-w-7xl mx-auto block">
+    <main className="max-w-7xl mx-auto block font-Inter">
       <Home />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
     </main>
   );
 }
