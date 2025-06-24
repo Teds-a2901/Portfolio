@@ -14,7 +14,7 @@ function Skills() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-x-12 mt-16">
+      <div className="grid md:grid-cols-2 gap-x-12 mt-16 px-4">
         <div className="">
           <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
           <Progressbar skill="JavaScript / TypeScript" percentage="90%" />
@@ -23,7 +23,7 @@ function Skills() {
           <Progressbar skill="PHP" percentage="80%" />
           <Progressbar skill="MySQL" percentage="95%" />
         </div>
-        <div className="">
+        <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-6">Soft Skills</h3>
           <Progressbar skill="Problem Solving" percentage="95%" />
           <Progressbar skill="Communication" percentage="90%" />
@@ -33,10 +33,12 @@ function Skills() {
         </div>
       </div>
 
-      <h3 className="text-2xl font-semibold text-center mt-16">
-        Technologies that I used
-      </h3>
-      <TechStack />
+      <div className="py-20 ">
+        <h3 className="text-2xl font-semibold text-center  ">
+          Technologies that I used
+        </h3>
+        <TechStack />
+      </div>
     </section>
   );
 }
