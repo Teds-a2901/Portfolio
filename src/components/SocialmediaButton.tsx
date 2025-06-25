@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const SocialMedialButtonDesign =
-  "p-3 rounded-full text-muted-foreground hover:bg-amber-100 transition-colors";
+  "p-3 rounded-full text-muted-foreground hover:bg-amber-100 text-black transition-colors";
 
 interface SocialMedialButtonDesignProps {
   to: string;

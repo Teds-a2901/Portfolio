@@ -24,11 +24,11 @@ function Navigationbar({ activeSection }: { activeSection: string }) {
             Projects
           </NavbarButton>
         </li>
-        <li>
+        {/* <li>
           <NavbarButton to="/contact" activeSection={activeSection}>
             Contact
           </NavbarButton>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
