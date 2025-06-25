@@ -1,8 +1,11 @@
 import { LuGithub, LuSquareArrowOutUpRight } from "react-icons/lu";
 import SocialmediaButton from "../components/SocialmediaButton";
 import proejctsdata from "../data/projectsdata";
+import { useState } from "react";
 
 function Projects() {
+  const [activeCard, setActiveCard] = useState<number | null>(null);
+
   return (
     <section id="project" className="py-20">
       <div className="text-center max-w-3xl mx-auto mb-16">
@@ -21,18 +24,26 @@ function Projects() {
             key={idx}
             className="bg-white dark:bg-background rounded-2xl shadow-md overflow-hidden flex flex-col transition-transform hover:scale-[1.01]"
           >
-            <div className="relative group w-full aspect-[4/3] overflow-hidden">
+            <div
+              className="relative group w-full aspect-[4/3] overflow-hidden"
+              onClick={() => setActiveCard(activeCard === idx ? null : idx)}
+            >
               <img
                 src={tech.Image}
                 alt={tech.Name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover z-0"
               />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 hover:text-black transition-opacity duration-300 flex items-center justify-center gap-4">
+              <div
+                className={`absolute inset-0 bg-black/50 transition-opacity duration-300 flex items-center justify-center gap-4
+                ${activeCard === idx ? "opacity-100 z-10" : "opacity-0"}
+                sm:opacity-0 sm:group-hover:opacity-100
+              `}
+              >
                 {tech.github && (
                   <SocialmediaButton to={tech.github}>
                     <LuGithub
                       size={25}
-                      className="text-white  hover:text-black"
+                      className="text-white hover:text-black"
                     />
                   </SocialmediaButton>
                 )}
@@ -56,7 +67,7 @@ function Projects() {
                 {tech.techstack.map((item, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 text-xs rounded-full bg-gray-200"
+                    className="px-2 py-1 text-xs rounded-full bg-amber-200"
                   >
                     {item}
                   </span>
