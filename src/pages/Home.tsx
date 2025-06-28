@@ -4,6 +4,7 @@ import SocialmediaButton from "../components/SocialmediaButton";
 import { LuFacebook, LuGithub, LuLinkedin } from "react-icons/lu";
 import { SiGmail } from "react-icons/si";
 import DeveloperImg from "../assets/developer1.png";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <section id="home" className="min-h-screen flex items-center">
@@ -44,9 +45,13 @@ function Home() {
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-2">
-              <button className="inline-flex items-center justify-center rounded-md h-11 px-6 py-2 bg-slate-900 text-white hover:bg-amber-100 font-medium transition-colors hover:text-black">
+              <Link
+                to="mailto:marktedra29@gmail.com"
+                target="_blank"
+                className="inline-flex items-center justify-center rounded-md h-11 px-6 py-2 bg-slate-900 text-white hover:bg-amber-100 font-medium transition-colors hover:text-black"
+              >
                 Get Touch
-              </button>
+              </Link>
               <button
                 onClick={() => {
                   const section = document.getElementById("project");
