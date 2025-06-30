@@ -50,7 +50,7 @@ function Home() {
                 target="_blank"
                 className="inline-flex items-center justify-center rounded-md h-11 px-6 py-2 bg-slate-900 text-white hover:bg-amber-100 font-medium transition-colors hover:text-black"
               >
-                Get Touch
+                Get in touch
               </Link>
               <button
                 onClick={() => {
@@ -59,7 +59,7 @@ function Home() {
                     section.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
-                className="inline-flex items-center justify-center rounded-md h-11 px-6 py-2 border border-input bg-background hover:bg-amber-100 transition-colors"
+                className="inline-flex items-center justify-center rounded-md h-11 px-6 py-2 border border-input bg-background hover:bg-amber-100 transition-colors cursor-pointer"
               >
                 View Project
               </button>
