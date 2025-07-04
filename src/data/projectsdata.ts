@@ -26,14 +26,7 @@ const proejctsdata = [
     demo: "https://tech-quest-game.netlify.app/",
     Description:
       "A simple quiz game focused on technical computer-related topics, designed to test and enhance users’ knowledge in areas such as hardware and software.",
-    techstack: [
-      "React",
-      "Tailwind",
-      "Next.js",
-      "JavaScript",
-      "NextAuth",
-      "Supabase",
-    ],
+    techstack: ["React", "HTML", "CSS", "JavaScript", "MockAPI"],
   },
   {
     Name: "Find Vet and Groom Services",

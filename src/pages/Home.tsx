@@ -5,6 +5,7 @@ import { LuFacebook, LuGithub, LuLinkedin } from "react-icons/lu";
 import { SiGmail } from "react-icons/si";
 import DeveloperImg from "../assets/developer1.png";
 import { Link } from "react-router-dom";
+import { TbFileCv } from "react-icons/tb";
 function Home() {
   return (
     <section id="home" className="min-h-screen flex items-center">
@@ -76,6 +77,9 @@ function Home() {
               </SocialmediaButton>
               <SocialmediaButton to="mailto:marktedra29@gmail.com">
                 <SiGmail size={24} />
+              </SocialmediaButton>
+              <SocialmediaButton to="/MARK_TEDRA.pdf">
+                <TbFileCv size={24} />
               </SocialmediaButton>
             </div>
           </div>
